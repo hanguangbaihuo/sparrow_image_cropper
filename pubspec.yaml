@@ -1,6 +1,6 @@
 name: sparrow_image_cropper
 description: A Flutter plugin for Android and iOS supports cropping images
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/hanguangbaihuo/sparrow_image_cropper
 
 environment:
