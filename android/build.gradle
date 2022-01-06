@@ -1,0 +1,40 @@
+group 'vn.hunghd.flutter.plugins.sparrowimagecropper'
+version '1.0-SNAPSHOT'
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+    }
+
+    dependencies {
+         classpath 'com.android.tools.build:gradle:4.1.2'
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://www.jitpack.io" }
+    }
+}
+
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+        minSdkVersion 21
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    lintOptions {
+        disable 'InvalidPackage'
+    }
+    dependencies {
+        // implementation 'com.github.yalantis:ucrop:2.2.7'
+        implementation 'io.github.lucksiege:pictureselector:v2.7.3-rc09'
+    }
+}
