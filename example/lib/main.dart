@@ -3,7 +3,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:sparrow_image_cropper/sparrow_image_cropper.dart';
-import 'package:image_picker/image_picker.dart';
+import 'package:sparrow_image_picker/sparrow_image_picker.dart';
 
 void main() => runApp(new MyApp());
 
@@ -81,7 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Future<Null> _pickImage() async {
     final pickedImage =
-        await ImagePicker().getImage(source: ImageSource.gallery);
+        await ImagePicker().pickImage(source: ImageSource.gallery);
     imageFile = pickedImage != null ? File(pickedImage.path) : null;
     if (imageFile != null) {
       setState(() {
