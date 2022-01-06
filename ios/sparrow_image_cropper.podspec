@@ -8,9 +8,9 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 A Flutter plugin supports cropping images
                        DESC
-  s.homepage         = 'https://github.com/hnvn/flutter_image_cropper'
+  s.homepage         = 'https://github.com/hanguangbaihuo/sparrow_image_cropper'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'HungHD' => 'hunghd.yb@gmail.com' }
+  s.author           = { 'rebel' => 'xiaoan.sha@gmail.com' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
